@@ -1,0 +1,141 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+       background-color: #000021;
+       color: aliceblue;
+       font-family: 'poppins',sans-serif;
+    }
+    nav{
+        background-color: transparent;
+      box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 100px;
+        width: 100%;
+        align-items: center;
+        
+    }
+    nav li{
+        height: 50px;
+       
+    }
+    nav a{
+        height: 30px;
+      padding: 0 10px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: whitesmoke;
+      font-weight: bold;
+     
+    }
+    nav li:first-child{
+       margin-right: auto;   
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 2.5rem;
+      font-weight: bolder;
+    }
+    
+    .sidebar{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 250px;
+      z-index: 999;
+      background-color: #000021;
+      color: whitesmoke;
+      backdrop-filter: blur(5px);
+      box-shadow: -10px 0 15px rgba(0,0,0,0.1);
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .sidebar li{
+      width: 100%;
+    }
+    .sidebar a{
+      width: 100%;
+    }
+    .menu-button{
+      display: none;
+    }
+    @media(max-width: 880px){
+        .hideOnMobile{
+            display: none;
+        }
+         .menu-button{
+      display: flex;
+      height: 20px;
+      
+    
+    }
+    .titlep{
+        font-size: 1rem;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav li{
+      height: 50px;
+    }
+    nav a{
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar li:first-child{
+      margin-right: auto; 
+      padding: 0 10px 40px 0;
+      font-size: 20px;
+      background-color: transparent;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+    }
+      
+    }
+    @media (max-width: 440px) {
+      .sidebar {
+        width: 100%;
+      }
+      .menu-button{
+      display: flex;
+      height: 15px;
+      font-size: 20px;
+      padding-right: 10px;
+    }
+    .titlep{
+      font-size: 1rem;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav li{
+      height: 50px;
+    }
+    nav a{
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: whitesmoke;
+      font-weight: bold;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    
+    }
